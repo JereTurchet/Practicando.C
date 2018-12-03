@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void Cargas (float *nros[], int *N)
+void Cargas (float nros[], int *N)
 {
     FILE *numeros;
     int j;
@@ -24,7 +24,7 @@ int main ()
     int elementos;
     float valor;
 
-    Cargas(nros[], &elementos);
+    Cargas(nros[35], &elementos);
 
     printf("Ingrese que valor quiere buscar: ");
     scanf("%f", &valor);
@@ -33,7 +33,7 @@ int main ()
                {
                    i++;
                }
-                if (nros[i] = valor)
+                if (nros[i] == valor)
                 {
                     printf("La primera coincidencia del valor: %f esta en la posición %d .", valor, i);
                 }
